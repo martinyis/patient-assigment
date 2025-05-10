@@ -40,6 +40,15 @@ export default function PatientLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="booking"
+        options={{
+          title: "Booking",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" color={color} size={26} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }

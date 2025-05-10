@@ -1,3 +1,4 @@
+import Calendar from "@/components/Calendar";
 import Settings from "@/components/Settings";
 import { db } from "@/utils/firebase";
 import { theme } from "@/utils/theme";
@@ -27,6 +28,7 @@ export default function PatientHomeScreen() {
   return (
     <View style={styles.container}>
       <Settings />
+      <Calendar />
     </View>
   );
 }

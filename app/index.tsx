@@ -1,8 +1,8 @@
+import Auth from "@/components/Auth";
 import { Redirect } from "expo-router";
 import { onAuthStateChanged } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { StyleSheet, View } from "react-native";
-import Auth from "../components/Auth";
 import { auth } from "../utils/firebase";
 export default function Index() {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
